@@ -1,0 +1,10 @@
+read x;
+(( divide = x ))
+while [ $x -gt 0 ] 
+do
+    read var
+    (( sum = sum + var ))
+    (( x = x - 1 ))
+done
+((new =  sum*1000/divide ))
+printf "%0.3f\n" $(echo "scale=5; $sum/$divide" | bc -l)

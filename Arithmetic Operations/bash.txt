@@ -1,0 +1,2 @@
+read x;
+printf "%0.3f\n" $(echo "$x" | bc -l )
