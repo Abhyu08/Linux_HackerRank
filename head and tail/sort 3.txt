@@ -1,0 +1,22 @@
+sort -V
+
+
+/*
+There is a special flag for this -V for version numbers
+
+$ sort -V numbers
+
+1.0
+1.1
+1.3
+1.3.3
+1.4-p1
+1.6.1
+1.11.4
+1.15
+2.2.2
+2.2.10
+2.4
+2.4.6
+
+*/

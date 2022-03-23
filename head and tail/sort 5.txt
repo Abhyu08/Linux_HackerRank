@@ -1,0 +1,16 @@
+sort -t $'\t' -rnk 2 
+
+/*
+sort -b: Ignore blanks at the start of the line.
+sort -r: Reverse the sorting order.
+sort -o: Specify the output file.
+sort -n: Use the numerical value to sort.
+sort -M: Sort as per the calendar month specified.
+sort -u: Suppress lines that repeat an earlier key.
+sort -k POS1, POS2: Specify a key to do the sorting. POS1 and POS2 are optional parameters and are used to indicate the starting field and the ending field indices. Without POS2, only the field specified by POS1 is used. Each POS is specified as “F.C” where F represents the field index, and C represents the character index from the start of the field.
+sort -t SEP: Use the provided separator to identify the fields.
+With the “-k” option, the sort command can be used to sort flat file databases. Without the “-k” option, the sorting is performed using the entire line. The default separator for fields is the space character. The -t option can be used to change the separator.
+
+-t $'field_seperator'
+
+*/
